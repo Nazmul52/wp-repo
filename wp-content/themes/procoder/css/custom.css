@@ -1,0 +1,104 @@
+/*==============================
+Common CSS
+================================*/
+body {
+    font-family: 'Kaisei Decol', serif;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: "Oswald", sans-serif;
+    line-height: 1.5em;
+}
+img{
+    max-width: 100%;
+}
+
+/*==============================
+Header area style
+================================*/
+
+#header-area{
+    padding: 15px 0;
+}
+#header-area .col-md-3 {
+    margin-top: -50px !important;
+}
+#header-area .col-md-9 ul {
+    font-family: "Oswald", sans-serif;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+}
+#header-area .col-md-9 ul li {
+    display: inline-block;
+    position: relative;
+}
+#header-area .col-md-9 ul li a {
+    color: #262626;
+    padding: 20px 10px;
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+#header-area .col-md-9 ul li a:hover {
+    background: #ea1a70;
+    color: #fff;
+}
+
+/*Dropdown Menu*/
+#header-area .col-md-9 ul li ul {
+    background: #262626 none repeat scroll 0 0;
+    left: -99999px;
+    margin: 0;
+    position: absolute;
+    text-align: left;
+    top: 62px;
+    width: 200px;
+}
+#header-area .col-md-9 ul li:hover ul{
+    left: 0px;
+}
+#header-area .col-md-9 ul li ul li{
+    display: block;
+}
+
+#header-area .col-md-9 ul li ul li a {
+    color: #fff;
+    padding: 8px 10px;
+}
+#header-area .col-md-9 ul li ul li a:hover {
+    background: #ddd;
+    color: #262626;
+}
+#header-area .col-md-9 ul li:hover a{
+    background: #ea1a70;
+    color: #fff;
+}
+#header-area .col-md-9 ul li:hover ul li a {
+    background: none;
+    color: #fff;
+}
+
+/*Sub Dropdown Menu*/
+#header-area .col-md-9 ul li ul ul {
+    left: -999999px;
+    top: 0px;
+    position: absolute;
+}
+#header-area .col-md-9 ul li:hover ul li ul{
+    left: -999999px;
+}
+#header-area .col-md-9 ul li ul li:hover ul {
+    left: 200px;
+}
+#header-area .col-md-9 ul li ul li:hover a {
+    background: #ea1a70;
+    color: #fff;
+}
+#header-area .col-md-9 ul li:hover ul li a {
+    background: #262626;
+    color: #fff;
+}
+#header-area .col-md-9 ul li ul li a:hover {
+    background: #ea1a70;
+    color: #fff;
+}
