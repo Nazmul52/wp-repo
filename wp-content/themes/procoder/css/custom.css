@@ -3,6 +3,7 @@ Common CSS
 ================================*/
 body {
     font-family: 'Kaisei Decol', serif;
+    line-height: 1.5em;
 }
 h1, h2, h3, h4, h5, h6{
     font-family: "Oswald", sans-serif;
@@ -16,36 +17,42 @@ img{
 Header area style
 ================================*/
 
-#header-area{
+#header_area{
     padding: 15px 0;
 }
-#header-area .col-md-3 {
+#header_area .col-md-3 {
     margin-top: -50px !important;
 }
-#header-area .col-md-9 ul {
+#header_area .col-md-9 ul {
     font-family: "Oswald", sans-serif;
     padding: 0;
     list-style: none;
     text-align: right;
 }
-#header-area .col-md-9 ul li {
+#header_area .col-md-9 ul li {
     display: inline-block;
     position: relative;
 }
-#header-area .col-md-9 ul li a {
+#header_area .col-md-9 ul li a span{
+    display: block;
+    font-size: 12px;
+    font-family: 'Kaisei Decol', serif;
+}
+#header_area .col-md-9 ul li a {
     color: #262626;
     padding: 20px 10px;
     display: block;
     text-transform: uppercase;
     text-decoration: none;
+    font-size: 16px;
 }
-#header-area .col-md-9 ul li a:hover {
+#header_area .col-md-9 ul li a:hover {
     background: #ea1a70;
     color: #fff;
 }
 
 /*Dropdown Menu*/
-#header-area .col-md-9 ul li ul {
+#header_area .col-md-9 ul li ul {
     background: #262626 none repeat scroll 0 0;
     left: -99999px;
     margin: 0;
@@ -53,52 +60,104 @@ Header area style
     text-align: left;
     top: 62px;
     width: 200px;
+    z-index: 99999;
 }
-#header-area .col-md-9 ul li:hover ul{
+#header_area .col-md-9 ul li:hover ul{
     left: 0px;
 }
-#header-area .col-md-9 ul li ul li{
+#header_area .col-md-9 ul li ul li{
     display: block;
 }
 
-#header-area .col-md-9 ul li ul li a {
+#header_area .col-md-9 ul li ul li a {
     color: #fff;
     padding: 8px 10px;
 }
-#header-area .col-md-9 ul li ul li a:hover {
+#header_area .col-md-9 ul li ul li a:hover {
     background: #ddd;
     color: #262626;
 }
-#header-area .col-md-9 ul li:hover a{
+#header_area .col-md-9 ul li:hover a{
     background: #ea1a70;
     color: #fff;
 }
-#header-area .col-md-9 ul li:hover ul li a {
+#header_area .col-md-9 ul li:hover ul li a {
     background: none;
     color: #fff;
 }
 
 /*Sub Dropdown Menu*/
-#header-area .col-md-9 ul li ul ul {
+#header_area .col-md-9 ul li ul ul {
     left: -999999px;
     top: 0px;
     position: absolute;
 }
-#header-area .col-md-9 ul li:hover ul li ul{
+#header_area .col-md-9 ul li:hover ul li ul{
     left: -999999px;
 }
-#header-area .col-md-9 ul li ul li:hover ul {
+#header_area .col-md-9 ul li ul li:hover ul {
     left: 200px;
 }
-#header-area .col-md-9 ul li ul li:hover a {
+#header_area .col-md-9 ul li ul li:hover a {
     background: #ea1a70;
     color: #fff;
 }
-#header-area .col-md-9 ul li:hover ul li a {
+#header_area .col-md-9 ul li:hover ul li a {
     background: #262626;
     color: #fff;
 }
-#header-area .col-md-9 ul li ul li a:hover {
+#header_area .col-md-9 ul li ul li a:hover {
     background: #ea1a70;
     color: #fff;
+}
+
+
+/*===================
+Menu Position
+=====================*/
+#header_area.left_menu .col-md-3 {
+    order: 2;
+  }
+  #header_area.left_menu .col-md-9 {
+    order: 1;
+  }
+  #header_area.left_menu .col-md-9 ul {
+    text-align: left;
+  }
+  
+  #header_area.center_menu .col-md-3 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  #header_area.center_menu .col-md-9 {
+    width: 100%;
+  }
+  #header_area.center_menu .col-md-9 ul {
+    text-align: center;
+  }
+  #header_area.center_menu .col-md-9 ul ul{
+    text-align: left
+  }
+
+/*===================
+Copyright Section
+=====================*/
+#copyright_area {
+    background: #292929;
+    padding: 20px 0;
+    color: #fff;
+    text-align: center;
+}
+#copyright_area p {
+    margin: 0;
+    color: #ea1a70;
+    font-size: 15px;
+}
+#copyright_area p a {
+    color: #ea1a70;
+}
+
+#copyright_area p a:hover {
+    text-decoration: underline;
 }
