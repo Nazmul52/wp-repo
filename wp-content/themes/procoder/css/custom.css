@@ -150,6 +150,10 @@ Index Page Style
 #body_area .blog_area {
     width: 100%;
     margin-bottom: 15px;
+    background: #fff;
+    padding: 15px;
+    box-shadow: 0px 0px 18px #ddd; 
+    background: #ddd;
 }
 #body_area .post_thumb {
     width: 100%;
@@ -198,11 +202,90 @@ a.readmore {
 }
 
 /*===================
+Sidebar Section
+=====================*/
+
+#body_area .child_sidebar{
+    margin-bottom: 20px;
+}
+#body_area .child_sidebar h2{
+    font-family: 'Kaisei Decol' sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 0px;
+    line-height: 1em;
+}
+#body_area .child_sidebar input[type="search"]{
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+#body_area .child_sidebar button[type="submit"]{
+    background: #ea1a70;
+    border: 1px solid #ea1a70;
+    padding: 10px;
+    color: #fff;
+    margin: 0;
+    transition: 0.5s;
+}
+#body_area .child_sidebar button[type="submit"]:hover{
+    background: #262626;
+    border: 1px solid #262626;
+}
+#body_area .child_sidebar ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+}
+#body_area .child_sidebar ul li{
+    display: block;
+    margin-bottom: 5px;
+}
+
+#body_area .child_sidebar ul li a{
+    display: inline-block;
+    margin-bottom: #262626;
+    text-decoration: none;
+}
+#body_area .child_sidebar ul li a:hover{
+    color: #ea1a70;
+}
+
+/*===================
+Footer Sidebar Section
+=====================*/
+
+#footer_area #footer .footer_left_sidebar h2{
+    font-size: 16px;
+    font-weight: bold;
+}
+#footer_area #footer .footer_right_sidebar ul{
+    display: inline-flex;
+    list-style: none;
+}
+#footer_area #footer .footer_right_sidebar ul li{
+    padding-right: 5px;
+    font-weight: bold;
+}
+
+#footer_area #footer .footer_right_sidebar ul li a{
+    text-decoration: none;
+    color: #000;
+}
+#footer_area #footer .footer_right_sidebar ul li:not(:last-child) a:after{
+    content: '|';
+    margin-left: 8px;
+    margin-right: 3px;
+    color: #2d2d2d;
+}
+#footer_area #footer .footer_social_sidebar  ul{
+    float: right;
+}
+
+/*===================
 Pagenav Section
 =====================*/
-#page_nav{
-
-}
 
 #page_nav p.pages{
     background: #ea1a70;

@@ -46,7 +46,7 @@ function nazmul_customizar_register($wp_customize){
         'description' => 'If you interested to update your footer settings, you can do it here.'
     ));
     $wp_customize->add_setting('nazmul_copyright_section', array(
-        'default' => '&copy; Copyright 2022 | Procoder BD',
+        'default' => '&copy; Copyright 2022 | Last Call Media',
     ));
     $wp_customize-> add_control( 'nazmul_copyright_section', array(
         'label' => 'Copyright Text',

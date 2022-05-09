@@ -23,3 +23,6 @@ include_once('inc/theme_function.php');
 include_once('inc/menu_register.php');
 
 
+// Widget Register
+
+include('inc/widgets_register.php');
