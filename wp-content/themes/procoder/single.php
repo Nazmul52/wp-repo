@@ -1,5 +1,5 @@
 <?php
-// The main template header file
+// This template for displaying pages
     get_header();
 ?>
 
@@ -7,7 +7,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-9">
-                    <?php get_template_part( 'template/blog_setup' )?>
+                    <?php get_template_part( 'template/post_setup' )?>
+                    <div id="comments_area">
+                        <?php comments_template()?>
+                    </div>
                 </div>
                 <div class="col-md-3">
                     <?php get_sidebar()?>

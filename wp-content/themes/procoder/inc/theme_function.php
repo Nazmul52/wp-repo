@@ -54,6 +54,44 @@ function nazmul_customizar_register($wp_customize){
         'setting' => 'nazmul_copyright_section',
         'section' => 'nazmul_footer_option',
     ));
+
+    // Theme Color
+
+    $wp_customize-> add_section('nazmul_colors', array(
+        'title' => __('Theme Color', 'nazmul'),
+        'description' => 'If you can change your theme color.',
+    ));
+
+    $wp_customize-> add_setting('nazmul_bg_color', array(
+        'default' => '#ffffff',
+    ));
+
+    $wp_customize-> add_control(new WP_Customize_Color_Control($wp_customize, 'nazmul_bg_color', array(
+        'label' => 'Background Color',
+        'section' => 'nazmul_colors',
+        'settings' => 'nazmul_bg_color'
+    )));
+
+    $wp_customize-> add_setting('nazmul_primary_color', array(
+        'default' => '#ea1a70',
+    ));
+
+    $wp_customize-> add_control(new WP_Customize_Color_Control($wp_customize, 'nazmul_primary_color', array(
+        'label' => 'Primary Color',
+        'section' => 'nazmul_colors',
+        'settings' => 'nazmul_primary_color'
+    )));
 };
 
 add_action( 'customize_register', 'nazmul_customizar_register' );
+
+function nazmul_theme_color_customize(){
+    ?>
+     <style>
+         body{background: <?php echo get_theme_mod( 'nazmul_bg_color');?>}
+         :root{ --pink: <?php echo get_theme_mod( 'nazmul_primary_color');?>}
+     </style>
+    <?php
+}
+
+add_action( 'wp_head', 'nazmul_theme_color_customize' );

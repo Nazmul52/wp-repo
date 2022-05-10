@@ -1,6 +1,10 @@
 /*==============================
 Common CSS
 ================================*/
+:root{
+    --pink: #ea1a70;
+}
+
 body {
     font-family: 'Kaisei Decol', serif;
     line-height: 1.5em;
@@ -47,7 +51,7 @@ Header area style
     font-size: 16px;
 }
 #header_area .col-md-9 ul li a:hover {
-    background: #ea1a70;
+    background: var(--pink);
     color: #fff;
 }
 
@@ -78,7 +82,7 @@ Header area style
     color: #262626;
 }
 #header_area .col-md-9 ul li:hover a{
-    background: #ea1a70;
+    background: var(--pink);
     color: #fff;
 }
 #header_area .col-md-9 ul li:hover ul li a {
@@ -99,7 +103,7 @@ Header area style
     left: 200px;
 }
 #header_area .col-md-9 ul li ul li:hover a {
-    background: #ea1a70;
+    background: var(--pink);
     color: #fff;
 }
 #header_area .col-md-9 ul li:hover ul li a {
@@ -107,7 +111,7 @@ Header area style
     color: #fff;
 }
 #header_area .col-md-9 ul li ul li a:hover {
-    background: #ea1a70;
+    background: var(--pink);
     color: #fff;
 }
 
@@ -177,12 +181,15 @@ Index Page Style
     width: 100%;
     margin-bottom: 15px;
 }
+#body_area .post_details div{
+    width: 100% !important;
+}
 #body_area .post_details h2 a{
     color: #262626;
     text-decoration: none;
 }
 #body_area .post_details h2 a:hover{
-    color: #ea1a70
+    color: var(--pink);
 }
 
 #body_area .post_details {
@@ -191,7 +198,7 @@ Index Page Style
 }
 
 a.readmore {
-    background: #ea1a70;
+    background: var(--pink);
     color: #fff;
     font-size: 15px;
     text-decoration: navajowhite;
@@ -221,8 +228,8 @@ Sidebar Section
     padding: 10px;
 }
 #body_area .child_sidebar button[type="submit"]{
-    background: #ea1a70;
-    border: 1px solid #ea1a70;
+    background: var(--pink);
+    border: 1px solid var(--pink);
     padding: 10px;
     color: #fff;
     margin: 0;
@@ -249,7 +256,26 @@ Sidebar Section
     text-decoration: none;
 }
 #body_area .child_sidebar ul li a:hover{
-    color: #ea1a70;
+    color: var(--pink);
+}
+#body_area .child_sidebar p a {
+    color: #fff;
+    background: #262626;
+    display: inline-block;
+    font-size: 12px !important;
+    text-decoration: none;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+#body_area .child_sidebar p a:hover {
+    background: var(--pink);
+}
+#body_area .child_sidebar h2 {
+    border-left: 5px solid var(--pink);
+    padding-left: 10px;
+}
+#body_area .child_sidebar .wp-block-categories li a {
+    color: #000
 }
 
 /*===================
@@ -288,7 +314,7 @@ Pagenav Section
 =====================*/
 
 #page_nav p.pages{
-    background: #ea1a70;
+    background: var(--pink);
     color: #fff;
     padding: 5px 10px;
 }
@@ -297,7 +323,7 @@ Pagenav Section
     padding: 0 5px;
 }
 #page_nav .page-numbers {
-    background: #ea1a70;
+    background: var(--pink);
     color: #fff;
     display: inline-block;
     text-decoration: none;
@@ -320,13 +346,82 @@ Copyright Section
 }
 #copyright_area p {
     margin: 0;
-    color: #ea1a70;
+    color: var(--pink);
     font-size: 15px;
 }
 #copyright_area p a {
-    color: #ea1a70;
+    color: var(--pink);
 }
 
 #copyright_area p a:hover {
     text-decoration: underline;
 }
+
+/*===================
+Archive and Seach Section
+=====================*/
+
+#archive_title, #search_title {
+    background: var(--pink);
+    padding: 15px;
+    margin-bottom: 20px;
+}
+#archive_title, #search_title h1{
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+/*===================
+404 page Section
+=====================*/
+.error_page {
+    padding: 50px 0;
+    text-align: center;
+  }
+  .error_page h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    color: #262626;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+  .error_page p {
+    color: var(--pink);
+    margin-bottom: 0;
+  }
+  .error_page a.homepage {
+    background: var(--pink);
+    color: #fff;
+    margin-bottom: 0;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 10px 25px;
+    display: inline-block;
+    margin-top: 20px;
+    transition: 0.5s;
+  }
+  .error_page a.homepage:hover {
+    background: #262626;
+  }
+  .error_search {
+    margin-bottom: 15px;
+  }
+  .error_search input[type="text"] {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+  .error_search input[type="submit"] {
+    background: var(--pink);
+    border: 1px solid var(--pink);
+    padding: 10px;
+    margin: 0;
+    color: #fff;
+    transition: 0.5s;
+  }
+  .error_search input[type="submit"]:hover {
+    background: #262626;
+    border: 1px solid #262626;
+  }
