@@ -4,21 +4,25 @@
 * My Theme Function
 */
 
-// All Default theme function here
+// All Default Theme Function Here
 
 include_once('inc/default.php');
 
-// All Enqueue theme function here
+// Adding Custom Post
+
+include_once('inc/custom_post.php');
+
+// Theme CSS and JS Calling Here
 
 include_once('inc/enqueue.php');
 
 
-// All Theme function here
+// All Theme Function Here
 
 include_once('inc/theme_function.php');
 
 
-// All Menu register function here
+// All Menu Register Function Here
 
 include_once('inc/menu_register.php');
 

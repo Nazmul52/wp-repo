@@ -15,6 +15,7 @@ h1, h2, h3, h4, h5, h6{
 }
 img{
     max-width: 100%;
+    height: auto;
 }
 
 /*==============================
@@ -424,4 +425,16 @@ Archive and Seach Section
   .error_search input[type="submit"]:hover {
     background: #262626;
     border: 1px solid #262626;
+  }
+
+  /* Theme servie area styling*/
+
+  #service_area {
+      padding: 45px 0;
+  }
+  #service_area .child_service{
+      background: #ddd;
+      box-shadow: 0 0 10px #ddd;
+      padding: 15px;
+      border-radius: 15px;
   }
