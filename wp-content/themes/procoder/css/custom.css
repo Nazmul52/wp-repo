@@ -8,7 +8,14 @@ Common CSS
 body {
     font-family: 'Kaisei Decol', serif;
     line-height: 1.5em;
+    font-size: 15px;
 }
+p {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    line-height: 1.5em;
+}
+
 h1, h2, h3, h4, h5, h6{
     font-family: "Oswald", sans-serif;
     line-height: 1.5em;
@@ -52,7 +59,7 @@ Header area style
     font-size: 16px;
 }
 #header_area .col-md-9 ul li a:hover {
-    background: var(--pink);
+    background: #ea1a70;
     color: #fff;
 }
 
@@ -83,7 +90,7 @@ Header area style
     color: #262626;
 }
 #header_area .col-md-9 ul li:hover a{
-    background: var(--pink);
+    background: #ea1a70;
     color: #fff;
 }
 #header_area .col-md-9 ul li:hover ul li a {
@@ -104,7 +111,7 @@ Header area style
     left: 200px;
 }
 #header_area .col-md-9 ul li ul li:hover a {
-    background: var(--pink);
+    background: #ea1a70;
     color: #fff;
 }
 #header_area .col-md-9 ul li:hover ul li a {
@@ -112,7 +119,7 @@ Header area style
     color: #fff;
 }
 #header_area .col-md-9 ul li ul li a:hover {
-    background: var(--pink);
+    background: #ea1a70;
     color: #fff;
 }
 
@@ -190,7 +197,7 @@ Index Page Style
     text-decoration: none;
 }
 #body_area .post_details h2 a:hover{
-    color: var(--pink);
+    color: #ea1a70;
 }
 
 #body_area .post_details {
@@ -199,7 +206,7 @@ Index Page Style
 }
 
 a.readmore {
-    background: var(--pink);
+    background: #ea1a70;
     color: #fff;
     font-size: 15px;
     text-decoration: navajowhite;
@@ -229,8 +236,8 @@ Sidebar Section
     padding: 10px;
 }
 #body_area .child_sidebar button[type="submit"]{
-    background: var(--pink);
-    border: 1px solid var(--pink);
+    background: #ea1a70;
+    border: 1px solid #ea1a70;
     padding: 10px;
     color: #fff;
     margin: 0;
@@ -257,7 +264,7 @@ Sidebar Section
     text-decoration: none;
 }
 #body_area .child_sidebar ul li a:hover{
-    color: var(--pink);
+    color: #ea1a70;
 }
 #body_area .child_sidebar p a {
     color: #fff;
@@ -269,10 +276,10 @@ Sidebar Section
     margin-bottom: 5px;
 }
 #body_area .child_sidebar p a:hover {
-    background: var(--pink);
+    background: #ea1a70;
 }
 #body_area .child_sidebar h2 {
-    border-left: 5px solid var(--pink);
+    border-left: 5px solid #ea1a70;
     padding-left: 10px;
 }
 #body_area .child_sidebar .wp-block-categories li a {
@@ -315,7 +322,7 @@ Pagenav Section
 =====================*/
 
 #page_nav p.pages{
-    background: var(--pink);
+    background: #ea1a70;
     color: #fff;
     padding: 5px 10px;
 }
@@ -324,7 +331,7 @@ Pagenav Section
     padding: 0 5px;
 }
 #page_nav .page-numbers {
-    background: var(--pink);
+    background: #ea1a70;
     color: #fff;
     display: inline-block;
     text-decoration: none;
@@ -347,11 +354,11 @@ Copyright Section
 }
 #copyright_area p {
     margin: 0;
-    color: var(--pink);
+    color: #ea1a70;
     font-size: 15px;
 }
 #copyright_area p a {
-    color: var(--pink);
+    color: #ea1a70;
 }
 
 #copyright_area p a:hover {
@@ -363,7 +370,7 @@ Archive and Seach Section
 =====================*/
 
 #archive_title, #search_title {
-    background: var(--pink);
+    background: #ea1a70;
     padding: 15px;
     margin-bottom: 20px;
 }
@@ -388,11 +395,11 @@ Archive and Seach Section
     text-transform: uppercase;
   }
   .error_page p {
-    color: var(--pink);
+    color: #ea1a70;
     margin-bottom: 0;
   }
   .error_page a.homepage {
-    background: var(--pink);
+    background: #ea1a70;
     color: #fff;
     margin-bottom: 0;
     text-decoration: none;
@@ -415,8 +422,8 @@ Archive and Seach Section
     padding: 10px;
   }
   .error_search input[type="submit"] {
-    background: var(--pink);
-    border: 1px solid var(--pink);
+    background: #ea1a70;
+    border: 1px solid #ea1a70;
     padding: 10px;
     margin: 0;
     color: #fff;
@@ -437,4 +444,14 @@ Archive and Seach Section
       box-shadow: 0 0 10px #ddd;
       padding: 15px;
       border-radius: 15px;
+  }
+
+ .shortcode_button {
+      background: #ea1a70;
+      color: #ddd;
+      padding: 10px 25px;
+      border-radius: 5px;
+      display: inline-block;
+      text-decoration: none;
+
   }
